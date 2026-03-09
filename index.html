@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust - Travel Destination Guide</title>
+    <!-- Use Google Fonts (Poppins) for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <h1 class="logo">Wander<span>lust</span></h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#blog">Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="animate-up">Discover Your Next Adventure</h2>
+            <p class="animate-up delay-1">Explore the world's most beautiful destinations curated just for you.</p>
+            <div class="search-bar animate-up delay-2">
+                <input type="text" id="searchInput" placeholder="Where do you want to go? (e.g., Bali, Paris, Goa)">
+                <button id="searchBtn" class="btn btn-secondary">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Destinations</h2>
+                <p>Find the perfect place to get lost across the globe.</p>
+            </div>
+            
+            <div class="destination-grid" id="destinationGrid">
+                
+                <!-- International -->
+                <div class="card" data-location="Bali">
+                    <div class="card-img-wrapper">
+                        <img src="images/bali.jpg" alt="Bali, Indonesia">
+                        <div class="cost-badge">From ₹54,000</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Bali</h3>
+                            <span class="rating">⭐ 4.8</span>
+                        </div>
+                        <p class="location">Indonesia</p>
+                        <p class="desc">A tropical paradise famous for its beaches, coral reefs, and vibrant culture.</p>
+                        <a href="bali.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <div class="card" data-location="Paris">
+                    <div class="card-img-wrapper">
+                        <img src="images/paris.jpg" alt="Paris, France">
+                        <div class="cost-badge">From ₹1,00,000</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Paris</h3>
+                            <span class="rating">⭐ 4.9</span>
+                        </div>
+                        <p class="location">France</p>
+                        <p class="desc">The city of light and love, home to the iconic Eiffel Tower and world-class art.</p>
+                        <a href="paris.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <!-- India Additions -->
+                <div class="card" data-location="Kerala">
+                    <div class="card-img-wrapper">
+                        <img src="images/kerala.jpg" alt="Kerala, India">
+                        <div class="cost-badge">From ₹37,500</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Kerala</h3>
+                            <span class="rating">⭐ 4.9</span>
+                        </div>
+                        <p class="location">India</p>
+                        <p class="desc">God's Own Country, known for its palm-lined beaches and tranquil backwaters.</p>
+                        <a href="kerala.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <div class="card" data-location="Goa">
+                    <div class="card-img-wrapper">
+                        <img src="images/goa.jpg" alt="Goa, India">
+                        <div class="cost-badge">From ₹29,000</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Goa</h3>
+                            <span class="rating">⭐ 4.7</span>
+                        </div>
+                        <p class="location">India</p>
+                        <p class="desc">A vibrant state famous for its beaches, nightlife, and Portuguese heritage.</p>
+                        <a href="goa.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <div class="card" data-location="Agra">
+                    <div class="card-img-wrapper">
+                        <img src="images/tajmahal.jpg" alt="Taj Mahal, Agra, India">
+                        <div class="cost-badge">From ₹21,000</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Agra</h3>
+                            <span class="rating">⭐ 4.9</span>
+                        </div>
+                        <p class="location">India</p>
+                        <p class="desc">Home to the universal symbol of love, the magnificent Taj Mahal.</p>
+                        <a href="agra.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <div class="card" data-location="Tokyo">
+                    <div class="card-img-wrapper">
+                        <img src="images/tokyo.jpg" alt="Tokyo, Japan">
+                        <div class="cost-badge">From ₹1,25,000</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Tokyo</h3>
+                            <span class="rating">⭐ 4.7</span>
+                        </div>
+                        <p class="location">Japan</p>
+                        <p class="desc">A bustling metropolis where ancient traditions meet cutting-edge technology.</p>
+                        <a href="tokyo.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <div class="card" data-location="Santorini">
+                    <div class="card-img-wrapper">
+                        <img src="images/santorini.jpg" alt="Santorini, Greece">
+                        <div class="cost-badge">From ₹1,16,000</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Santorini</h3>
+                            <span class="rating">⭐ 4.9</span>
+                        </div>
+                        <p class="location">Greece</p>
+                        <p class="desc">Stunning white-washed buildings clinging to cliffs above an underwater caldera.</p>
+                        <a href="santorini.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <div class="card" data-location="Machu Picchu">
+                    <div class="card-img-wrapper">
+                        <img src="images/machupicchu.jpg" alt="Machu Picchu, Peru">
+                        <div class="cost-badge">From ₹66,500</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Machu Picchu</h3>
+                            <span class="rating">⭐ 4.8</span>
+                        </div>
+                        <p class="location">Peru</p>
+                        <p class="desc">An Incan citadel set high in the Andes Mountains with breathtaking views.</p>
+                        <a href="machu-picchu.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <div class="card" data-location="New York">
+                    <div class="card-img-wrapper">
+                        <img src="images/new-york.jpg" alt="New York City, USA">
+                        <div class="cost-badge">From ₹91,500</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>New York City</h3>
+                            <span class="rating">⭐ 4.7</span>
+                        </div>
+                        <p class="location">USA</p>
+                        <p class="desc">The city that never sleeps, known for its skyline, Broadway, and diverse culture.</p>
+                        <a href="new-york.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <!-- New Destinations -->
+                <div class="card" data-location="Cape Town">
+                    <div class="card-img-wrapper">
+                        <img src="images/cape-town.jpg" alt="Cape Town, South Africa">
+                        <div class="cost-badge">From ₹79,000</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Cape Town</h3>
+                            <span class="rating">⭐ 4.8</span>
+                        </div>
+                        <p class="location">South Africa</p>
+                        <p class="desc">A stunning coastal city crowned by Table Mountain, offering beaches and vineyards.</p>
+                        <a href="cape-town.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <div class="card" data-location="Sydney">
+                    <div class="card-img-wrapper">
+                        <img src="images/sydney.jpg" alt="Sydney, Australia">
+                        <div class="cost-badge">From ₹1,33,000</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Sydney</h3>
+                            <span class="rating">⭐ 4.9</span>
+                        </div>
+                        <p class="location">Australia</p>
+                        <p class="desc">Home to the iconic Opera House, Harbour Bridge, and famous surfing beaches.</p>
+                        <a href="sydney.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <div class="card" data-location="Banff">
+                    <div class="card-img-wrapper">
+                        <img src="images/banff.jpg" alt="Banff, Canada">
+                        <div class="cost-badge">From ₹87,000</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Banff</h3>
+                            <span class="rating">⭐ 4.9</span>
+                        </div>
+                        <p class="location">Canada</p>
+                        <p class="desc">Spectacular alpine scenery, hot springs, and turquoise glacial lakes in the Rockies.</p>
+                        <a href="banff.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+
+                <div class="card" data-location="Marrakech">
+                    <div class="card-img-wrapper">
+                        <img src="images/marrakech.jpg" alt="Marrakech, Morocco">
+                        <div class="cost-badge">From ₹58,000</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Marrakech</h3>
+                            <span class="rating">⭐ 4.7</span>
+                        </div>
+                        <p class="location">Morocco</p>
+                        <p class="desc">A sensory overload of bustling souks, beautiful riads, and historic palaces.</p>
+                        <a href="marrakech.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map-section section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Explore the World</h2>
+                <p>See where your next adventure awaits.</p>
+            </div>
+            <div class="map-container">
+                <!-- Using an iframe for a cool interactive stylized map representation -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15000000!2d78.0!3d20.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1616609200000!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Traveler Stories</h2>
+                <p>Hear from people who have explored with us.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="quote">"Absolutely the best travel guide out there. I planned my entire Bali trip using their recommendations and it was flawless."</p>
+                    <div class="reviewer">
+                        <img src="images/user1.jpg" alt="Sarah J.">
+                        <div class="reviewer-info">
+                            <h4>Sarah J.</h4>
+                            <p>Adventure Seeker</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="quote">"The interactive maps and detailed itineraries saved me so much time. Cannot wait for my upcoming trip to Paris!"</p>
+                    <div class="reviewer">
+                        <img src="images/user2.jpg" alt="Mark T.">
+                        <div class="reviewer-info">
+                            <h4>Mark T.</h4>
+                            <p>Solo Traveler</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"I never knew Kerala was so beautiful before finding this site. The booking process was so smooth and easy."</p>
+                    <div class="reviewer">
+                        <img src="images/user3.jpg" alt="Priya M.">
+                        <div class="reviewer-info">
+                            <h4>Priya M.</h4>
+                            <p>Cultural Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / Tips Section -->
+    <section id="blog" class="blog section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Top Travel Tips</h2>
+                <p>Expert advice to make your journey smoother.</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="images/blog1.jpg" alt="Packing Light">
+                    <div class="blog-content">
+                        <span class="blog-tag">Tips</span>
+                        <h3>How to Pack Light for a 2-Week Trip</h3>
+                        <p>Master the art of minimal packing without sacrificing style or comfort on your next adventure.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="images/blog2.jpg" alt="Budget Travel">
+                    <div class="blog-content">
+                        <span class="blog-tag">Budget</span>
+                        <h3>Top 10 Hidden Costs of Travel</h3>
+                        <p>Don't let unexpected fees ruin your budget. Here’s what to watch out for when planning your trip.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="images/blog1.jpg" alt="Cultural Etiquette">
+                    <div class="blog-content">
+                        <span class="blog-tag">Culture</span>
+                        <h3>Cultural Etiquette: A Guide for Beginners</h3>
+                        <p>A quick guide to navigating new cultures respectfully, from dining customs to basic greetings.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Ready for the trip of a lifetime?</h2>
+                    <p>Contact our travel specialists today to start customizing your perfect itinerary. We handle the hard work so you can focus on the memories.</p>
+                    <ul class="contact-details">
+                        <li>📍 123 Travel Avenue, Wanderlust City</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ hello@wanderlust.example.com</li>
+                    </ul>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="bookingForm" class="contact-form">
+                        <h3>Send us a message</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="" disabled selected>Where do you want to go?</option>
+                                <option value="bali">Bali</option>
+                                <option value="india">India (Kerala, Goa, Agra)</option>
+                                <option value="paris">Paris</option>
+                                <option value="tokyo">Tokyo</option>
+                                <option value="other">Other / Not sure yet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your dream trip..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Request Custom Itinerary</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter (Moved before footer) -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Join Our Travel Community</h2>
+            <p>Subscribe to our newsletter for the best travel tips and exclusive deals directly to your inbox.</p>
+            <form id="subscribeForm" class="subscribe-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h2 class="logo">Wander<span>lust</span></h2>
+                <p>Making your travel dreams a reality since 2026.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Cancellation Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wanderlust Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
